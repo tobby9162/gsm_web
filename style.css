@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body {
+    /* background: url("images/img1.jpg") no-repeat; */
+    background-size: cover;
+}
+
+#big_box {
+    background: yellow;
+    border-radius: 0;
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    padding: 0;
+    position: relative;
+}
+.s_box1, .s_box2, .s_box3 {
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.s_box1 {
+    position: relative;
+    top: 200px;
+    left: 200px;
+}
+.s_box2 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.s_box3 {
+    position: fixed;
+    right: -50px;
+    bottom: 0;
+}
+
+
+
+
+div {
+    background: green;
+    width: 300px; /* 가로 사이즈 */
+    height: 300px; /* 세로 사이즈 */
+    border-left: 5px dotted black;
+    /*     사이즈 선모양 선색 */
+    padding: 30px; /* 안쪽 여백 */
+    margin: 30px; /* 바깥 여백 */
+    box-sizing: border-box;
+    border-radius: 50px 50% 50px 50%;
+    /*            왼쪽 위부터 시계 방향 */
+    box-shadow: 3px 3px 3px yellowgreen, 
+                -3px -3px 5px yellowgreen,
+                -3px 3px 5px yellowgreen, 
+                3px -3px 5px yellowgreen;
+  
+}
+h2 {
+    background: white;
+    width: 100px;
+    height: 100px;
+}
+h3 {
+    background: blue;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+span {
+    background: blueviolet;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+p {
+    text-align: justify; /* 텍스트 정렬*/
+    font-family: '돋움'; /* 폰트 */
+    color: white; /* 폰트 색상 */
+    font-size: 15px; /* 폰트 사이즈 */  
+    line-height: 160%;  /* 행간 */
+    text-shadow: 1px 1px 3px #00ffff, -1px -1px 3px blue, 
+                    3px 3px 2px green;
+    /*         x축, y축, 번짐 정도, 색깔  */
+    letter-spacing: -1px; /* 자간 */
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold; /* 글자 굵게 */
+}
+
+h1 { 
+    color: red;
+ }
+ b {
+     color: blue;
+ }
+ mark {
+     color: yellow;
+ }
+ i {
+     color: violet;
+ }
+ .tomato {
+     color: tomato;
+ }
+ #sj {
+     color: cyan;
+ }
+ ul li {
+     color: darkgreen;
+ }
+ ul li:nth-child(even) {
+     color: darkred;
+ }
+ ol li:nth-child(1) {
+    color: red;
+ }
+ .blue {
+    color: blue;
+ }
+ #yellow {
+     color: yellow;
+ }
+ ol li:nth-child(5) {
+     color: violet;
+ }
+ 
