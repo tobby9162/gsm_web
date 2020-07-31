@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+* {
+    margin: 0; /* 바깥 여백 */
+    padding: 0; /* 안쪽 여백 */
+    box-sizing: border-box;
+}
+body {
+    background : rgb(220, 167, 255); /* body 태그 배경 */
+    color: white; /* 글씨 색 */
+    text-shadow: 1px 1px 0 black; /* 글씨 그림자 */
+    font-size: 16px; /* 글씨 사이즈 */
+    line-height: 160%; /* 행간 */
+    letter-spacing: -1px; /* 자간 */
+    font-family: 'Do Hyeon', sans-serif; /* 폰트 */
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header {
+    margin: 20px auto;
+    width: 400px;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    flex: 1;
+    list-style: none; /* li 태그 불릿 없앰 */
+    text-align: center;
+    padding: 5px;
+}
+nav ul li a {
+    padding: 10px 20px ;
+    background: darkslateblue;
+    border-radius: 15px; /* 모서리 동그랗게 */
+    transition: 0.5s;
+}
+nav ul li a:hover {
+    background: deepskyblue;
+}
+
+
+article {
+    text-align: center; /* 글씨 가운데 정렬*/
+    position: relative;
+    top: 50px;
+}
+h1 {
+    font-size: 2em;
+}
+.main {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+table {
+    text-align: left;
+    margin:20px auto;
+}
+td {
+    padding: 3px;
+}
+
+
+footer {
+    background: #333;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

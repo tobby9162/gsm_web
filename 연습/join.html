@@ -4,26 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css"><!-- css 파일 연결-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+        /* font-family: 'Do Hyeon', sans-serif; */
+        
+        body {
+            font-family: 'Do Hyeon', sans-serif;
+            font-size: 20px;
+            color: #666;
+            line-height: 160%;
+            letter-spacing: -1px;
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: collapse; /* 테이블 테두리 한줄로 */
+        }
+        td {
+            padding: 10px 20px;
+            /*       위  오른쪽 아래 왼쪽 */
+        }
+        tr td:nth-child(1) {
+            text-align: center;
+            background: yellowgreen;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+
+    </style>
 </head>
 <body>
-    <!-- 헤더 -->
-    <header> 
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="profile.html">PROFILE</a></li>
-                <li><a href="login.html">LOGIN</a></li>
-                <li><a href="join.html">JOIN</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- 컨텐츠 -->
-    <article>
-        <h1>회원가입</h1>
+    <h1>회원가입</h1>
     <form>
-        <table >
+        <table border="1">
             <tr>
                 <td>아이디</td>
                 <td><input type="text" id="id" placeholder="아이디를 입력하세요" required></td>
@@ -54,7 +75,7 @@
             </tr> 
             <tr>
                 <td>자기소개</td>
-                <td><textarea cols="30" rows="5"></textarea></td>
+                <td><textarea cols="60" rows="5"></textarea></td>
             </tr>
         </table>
         <h1>
@@ -62,12 +83,6 @@
         <input type="reset" value="다시쓰기">
         </h1>
     </form>
-    </article>
-
-    <!-- 푸터 -->
-    <footer>
-        <address>gsm</address>
-    </footer>
     
 </body>
 </html>

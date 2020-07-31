@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #b_box {
+            width: 500px;
+            height: 500px;
+            background: yellow;
+            border: 1px solid black;
+            margin: 100px;
+        }
+        #b_box div {
+            width: 100px;
+            height: 100px;
+            background: green;
+            border: 1px solid black;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            position: relative;
+        }
+        #s_box1 {
+            position: relative;
+            top: -50px;
+            left: 50px;
+        }
+        #s_box2 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        #s_box3 {
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div id="b_box">
+        <div id="s_box1">relative</div>
+        <div id="s_box2">absolute</div>
+        <div id="s_box3">fixed</div>
+    </div>
+</body>
+</html>
